@@ -1,16 +1,85 @@
-# flutter_authenticator
+# Flutter Authenticator App
+<p>
+  <img src = "https://raw.githubusercontent.com/yannn001/Flutter-Authenticator-App/main/assets/icon.png" width= 200/>
+</p>
 
-A new Flutter project.
 
-## Getting Started
+This is a **simple yet effective Flutter-based Authenticator App** that allows users to manage **TOTP (Time-based One-Time Password)** accounts. It functions similarly to Google Authenticator, providing secure, time-sensitive codes for two-factor authentication.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📱 **Add Accounts via QR Code Scanner**
+- 🔑 **Manually Add Accounts using Key and Issuer**
+- ⏱️ **Generate TOTP Codes (Time-based One-Time Passwords)**
+- 🗑️ **Delete Saved Accounts**
+- 🎨 **Simple and Clean UI**
+- More to be added...
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📷 Screenshots
+
+| Home Screen | Bottom Sheet | Add Account |
+| --- | --- | --- |
+| ![Home Screen](https://github.com/user-attachments/assets/6bb49a06-b40a-467a-8f6b-ff669597d3db) | ![Bottom Sheet](https://github.com/user-attachments/assets/ca24e45e-4167-4f2c-817f-d4baca517d8d) | ![Add Account](https://github.com/user-attachments/assets/dc9ed715-0a55-4757-9335-793c65559aad) |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Flutter SDK installed (v3.x recommended)
+- Compatible IDE (VS Code, Android Studio, etc.)
+- A physical or emulated Android/iOS device
+
+### Installation
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/yannn001/Flutter-Authenticator-App.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd Flutter-Authenticator-App
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    flutter pub get
+    ```
+
+4. Run the app:
+
+    ```bash
+    flutter run
+    ```
+
+---
+
+
+## 💡 Future Enhancements
+
+- ☁️ Cloud Backup for Accounts
+- 📁 Import/Export Accounts
+
+---
+
+## 👤 Author
+
+**Yannn001**  
+- [GitHub Profile](https://github.com/yannn001)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
