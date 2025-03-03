@@ -1,4 +1,4 @@
-# Flutter Authenticator App
+# 2FAuthenticator
 <p>
   <img src = "https://raw.githubusercontent.com/yannn001/Flutter-Authenticator-App/main/assets/icon.png" width= 200/>
 </p>
