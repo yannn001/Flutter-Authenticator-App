@@ -54,7 +54,7 @@ dev_dependencies:
   launcher_name: ^1.0.2
 
 launcher_name:
-  default: "Mycodes"
+  default: "2FAuthenticator"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

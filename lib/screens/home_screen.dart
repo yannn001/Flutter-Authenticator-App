@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(fontFamily: 'Arial'),
             children: [
               TextSpan(
-                text: 'My',
+                text: '2F',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               TextSpan(
-                text: 'codes',
+                text: 'Authenticator',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.normal,
@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        centerTitle: true,
+        centerTitle: false,
         actions: [
           FloatingActionButton(
             onPressed: () => showAddAccountOptions(context),

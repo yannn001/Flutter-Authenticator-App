@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Image.asset('assets/icon.png', width: 120, height: 120),
             const SizedBox(height: 16),
             const Text(
-              'Mycodes',
+              '2FAuthenticator',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,
