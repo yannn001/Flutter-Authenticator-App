@@ -23,7 +23,7 @@ This is a **simple yet effective Flutter-based Authenticator App** that allows u
 
 | Home Screen | Bottom Sheet | Add Account |
 | --- | --- | --- |
-| ![Home Screen](https://github.com/user-attachments/assets/6bb49a06-b40a-467a-8f6b-ff669597d3db) | ![Bottom Sheet](https://github.com/user-attachments/assets/ca24e45e-4167-4f2c-817f-d4baca517d8d) | ![Add Account](https://github.com/user-attachments/assets/dc9ed715-0a55-4757-9335-793c65559aad) |
+| ![Home Screen](https://github.com/user-attachments/assets/1f7f5698-29fc-4d23-98cd-50b595737cfe) | ![Bottom Sheet](https://github.com/user-attachments/assets/4972bf7c-525d-42ee-b26c-8af29ee08d4a) | ![Add Account](https://github.com/user-attachments/assets/dc9ed715-0a55-4757-9335-793c65559aad) |
 
 ---
 
