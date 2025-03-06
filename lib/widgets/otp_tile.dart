@@ -102,18 +102,11 @@ class _OtpTileState extends State<OtpTile> with SingleTickerProviderStateMixin {
                           width: 50,
                           height: 50,
                           decoration: BoxDecoration(
-                            color: Colors.transparent,
+                            color: Colors.white10,
                             borderRadius: BorderRadius.circular(15),
                           ),
                           clipBehavior: Clip.antiAlias,
-                          child: TextAvatar(
-                            text: widget.issuer,
-                            textColor: Colors.black,
-                            numberLetters: 2,
-                            size: 50,
-                            fontSize: 24,
-                            upperCase: true,
-                          ),
+                          child: _buildIssuerIcon(widget.issuer),
                         ),
                         SizedBox(width: 10),
                         Column(
@@ -190,5 +183,74 @@ class _OtpTileState extends State<OtpTile> with SingleTickerProviderStateMixin {
         ),
       );
     }).toList();
+  }
+
+  Widget _buildIssuerIcon(String issuer) {
+    final iconUrl = _getIssuerIconUrl(issuer);
+    if (iconUrl != null) {
+      return Image.network(
+        iconUrl,
+        fit: BoxFit.cover,
+        width: 50,
+        height: 50,
+        errorBuilder: (context, error, stackTrace) {
+          return TextAvatar(
+            text: issuer,
+            textColor: Colors.black,
+            numberLetters: 2,
+            size: 50,
+            fontSize: 24,
+            upperCase: true,
+          );
+        },
+      );
+    } else {
+      return TextAvatar(
+        text: issuer,
+        textColor: Colors.black,
+        numberLetters: 2,
+        size: 50,
+        fontSize: 24,
+        upperCase: true,
+      );
+    }
+  }
+
+  String? _getIssuerIconUrl(String issuer) {
+    final icons = {
+      'Google': 'https://img.icons8.com/color/100/google-logo.png',
+      'Facebook': 'https://img.icons8.com/color/100/facebook.png',
+      'Twitter': 'https://img.icons8.com/ios-filled/100/twitterx--v1.png',
+      'GitHub': 'https://img.icons8.com/ios-filled/100/github.png',
+      'LinkedIn': 'https://img.icons8.com/fluency/150/linkedin.png',
+      'Instagram': 'https://img.icons8.com/color/100/instagram-new--v1.png',
+      'Microsoft': 'https://img.icons8.com/color/100/microsoft.png',
+      'Dropbox': 'https://img.icons8.com/color/100/dropbox.png',
+      'Slack': 'https://img.icons8.com/color/100/slack-new.png',
+      'Amazon': 'https://img.icons8.com/color/100/amazon.png',
+      'Twitch': 'https://img.icons8.com/color/100/twitch.png',
+      'Snapchat': 'https://img.icons8.com/color/100/snapchat.png',
+      'WhatsApp': 'https://img.icons8.com/color/100/whatsapp.png',
+      'PayPal': 'https://img.icons8.com/color/100/paypal.png',
+      'TikTok': 'https://img.icons8.com/color/50/tiktok.png',
+      'Netflix': 'https://img.icons8.com/color/50/netflix.png',
+      'Spotify': 'https://img.icons8.com/color/50/spotify.png',
+      'Discord': 'https://img.icons8.com/color/50/discord-new-logo.png',
+      'Reddit': 'https://img.icons8.com/color/50/reddit.png',
+      'Steam': 'https://img.icons8.com/color/50/steam.png',
+      'Epic Games': 'https://img.icons8.com/color/50/epic-games.png',
+      'Origin': 'https://img.icons8.com/color/50/origin.png',
+      'Uplay': 'https://img.icons8.com/color/50/uplay.png',
+      'Battle.net': 'https://img.icons8.com/color/50/battle-net.png',
+      'PlayStation': 'https://img.icons8.com/color/50/playstation.png',
+      'Xbox': 'https://img.icons8.com/color/50/xbox.png',
+      'Nintendo': 'https://img.icons8.com/color/50/nintendo.png',
+      'Apple': 'https://img.icons8.com/ios-filled/100/mac-os.png',
+      'Samsung': 'https://img.icons8.com/color/50/samsung.png',
+      'Huawei': 'https://img.icons8.com/color/50/huawei.png',
+      'Sony': 'https://img.icons8.com/color/50/sony.png',
+    };
+
+    return icons[issuer];
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_authenticator/screens/manual_add_screen.dart';
 import 'package:flutter_authenticator/screens/qr_scanner_screen.dart';
 import 'package:flutter_authenticator/utils/storage_utils.dart';
