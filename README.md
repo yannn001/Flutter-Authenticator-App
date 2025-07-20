@@ -3,6 +3,9 @@
   <img src = "https://raw.githubusercontent.com/yannn001/Flutter-Authenticator-App/main/assets/icon.png" width= 200/>
 </p>
 
+  ![GitHub Releases](https://img.shields.io/github/downloads/yannn001/Flutter-Authenticator-App/total)
+  ![GitHub release](https://img.shields.io/github/v/release/yannn001/Flutter-Authenticator-App)
+
 
 This is a **simple yet effective Flutter-based Authenticator App** that allows users to manage **TOTP (Time-based One-Time Password)** accounts. It functions similarly to Google Authenticator, providing secure, time-sensitive codes for two-factor authentication.
 
